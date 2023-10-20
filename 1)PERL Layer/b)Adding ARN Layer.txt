@@ -1,0 +1,37 @@
+To add an ARN (Amazon Resource Name) to an AWS Lambda layer, you'll need to create a new layer version or update an existing one. Here are the steps to add an ARN to an AWS Lambda layer:
+
+Sign in to the AWS Management Console:
+
+Make sure you're signed in to the AWS Management Console using your AWS account.
+
+Navigate to AWS Lambda:
+
+Go to the AWS Lambda service in the AWS Management Console.
+
+Choose a Lambda Function:
+
+Select the Lambda function to which you want to add a layer. You can either create a new function or use an existing one.
+
+Configure Layers:
+
+Scroll down to the "Function code" section, and in the "Layers" box, click "Add a layer."
+
+Add a Custom Layer:
+
+Click "Provide a layer version ARN." This is where you'll enter your layer ARN.
+
+Enter the ARN:
+
+In the dialog that appears, enter the ARN of the layer you want to add. The ARN should look something like arn:aws:lambda:region:account-id:layer:layer-name:layer-version.
+
+Save and Update:
+
+Click the "Add" button to add the layer ARN to your Lambda function. Make sure to save your Lambda function configuration by clicking the "Save" button at the top of the page.
+
+Test and Deploy:
+
+Once the layer is added, you can test and deploy your Lambda function with the new layer.
+
+Remember that you need the appropriate IAM (Identity and Access Management) permissions to modify Lambda function configurations. Additionally, ensure that the layer you're adding is accessible in your AWS account and region. If it's a custom layer, you should have already created it or have access to it.
+
+It's also important to note that when you add a layer to a Lambda function, you're essentially making the code and dependencies from that layer available to your Lambda function. This helps keep your Lambda function's code lean and modular.
