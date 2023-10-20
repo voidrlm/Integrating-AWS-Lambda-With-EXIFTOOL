@@ -1,0 +1,11 @@
+You can easily access the latest Perl layers for your AWS Lambda functions by visiting the official AWS Lambda layer repository on CPAN, 
+which is available at the following URL: https://metacpan.org/pod/AWS::Lambda.
+
+For my specific implementation, 
+I have opted for the AWS Lambda runtime layer designed for Perl 5.32 running on the x86_64 architecture.
+Here is the ARN (Amazon Resource Name) for this layer that you can use:
+
+ARN: arn:aws:lambda:ap-south-1:445285296882:layer:perl-5-32-runtime-al2-x86_64:7
+
+By utilizing this layer, you can ensure that your Perl-based AWS Lambda functions run smoothly and efficiently,
+taking advantage of the latest runtime environment and updates.
